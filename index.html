@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David GÜNEŞ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:url("background.jpg") center center/cover no-repeat fixed;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+
+}
+
+/* Blur */
+
+body::before{
+
+content:"";
+position:absolute;
+inset:0;
+backdrop-filter:blur(18px);
+background:rgba(0,0,0,.35);
+
+}
+
+/* Kart */
+
+.container{
+
+position:relative;
+z-index:1;
+
+width:90%;
+max-width:420px;
+
+padding:35px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.25);
+
+box-shadow:0 8px 40px rgba(0,0,0,.35);
+
+text-align:center;
+
+color:white;
+
+}
+
+.profile{
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+border:4px solid rgba(255,255,255,.7);
+
+object-fit:cover;
+
+margin-bottom:15px;
+
+}
+
+h1{
+
+font-size:30px;
+
+}
+
+p{
+
+opacity:.8;
+margin-bottom:30px;
+
+}
+
+.link{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+text-decoration:none;
+
+padding:16px;
+
+margin:15px 0;
+
+border-radius:15px;
+
+background:rgba(255,255,255,.12);
+
+color:white;
+
+font-size:18px;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+.link:hover{
+
+transform:translateY(-4px);
+
+background:rgba(255,255,255,.22);
+
+}
+
+.fa-spotify{
+
+color:#1DB954;
+
+}
+
+.fa-instagram{
+
+color:#ff4f87;
+
+}
+
+.fa-tiktok{
+
+color:white;
+
+}
+
+.fa-x-twitter{
+
+color:white;
+
+}
+
+@media(max-width:500px){
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:24px;
+
+}
+
+.link{
+
+font-size:17px;
+
+padding:14px;
+
+}
+
+.profile{
+
+width:100px;
+height:100px;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<img src="profil.jpg" class="profile">
+
+<h1>David GÜNEŞ</h1>
+
+<p>Tüm sosyal medya hesaplarım 👇</p>
+
+<a class="link" href="https://open.spotify.com/user/21z4rjtqqtvpaqk6htta6ibdq?si=847a221a8aa94088" target="_blank">
+<i class="fab fa-spotify"></i>
+Spotify
+</a>
+
+<a class="link" href="https://www.instagram.com/davidof.ru?igsh=eHcwenprbmVpMTNr" target="_blank">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+<a class="link" href="https://www.tiktok.com/@vulkanus.png?_r=1&_t=ZS-97ZKYplHMkH" target="_blank">
+<i class="fab fa-tiktok"></i>
+TikTok
+</a>
+
+<a class="link" href="https://x.com/davidgunes2" target="_blank">
+<i class="fa-brands fa-x-twitter"></i>
+(Twitter)
+</a>
+
+</div>
+
+</body>
+</html>
